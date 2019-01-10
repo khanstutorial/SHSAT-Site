@@ -83,7 +83,7 @@ def cityGeneration():
                      "Locust-Manor","Long-Island-City","Malba","Mapleton","Maspeth","Middle-Village",
                      "Morris-Park","Murray-Hill","Oakland-Gardens","Ozone-Park","Park-Slope","Parkchester",
                      "Pelham-Bay","Pomonok","Prospect-Lefferts-Gardens","Prospect-Park-South","Queens-Village",
-                     "Rego-Park","Richmond-Hill","Rochdale","Saint-Albans","Soundview","South-Jamaica",
+                     "Rego-Park","Richmond-Hill","Rochdale","Rosedale","Saint-Albans","Soundview","South-Jamaica",
                      "South-Ozone-Park","South-Richmond-Hill","Springfield-Gardens","Sunnyside-Gardens","Sunnyside",
                      "Sunset-Park","Unionport","Upper-East-Side","Utopia","Van-Nest","West-Farms","Westchester-Square",
                      "Whitestone","Windsor-Terrace","Woodhaven","Woodside"]
