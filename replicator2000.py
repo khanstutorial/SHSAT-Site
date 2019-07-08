@@ -1,6 +1,23 @@
 #! python3
 import re
 
+neighborhoodsAst = ["Astoria","Long-Island-City","Upper-East-Side"]
+neighborhoodsSunny = ["Sunnyside-Gardens","Sunnyside","Blissville","Laurel-Hill"]
+neighborhoodsJack = ["Woodside","Jackson-Heights","East-Elmhurst","Corona","Elmhurst","Maspeth","LeFrak-City",
+    "Middle-Village","Rego-Park","Forest-Hills","Forest-Hills-Gardens","Kew-Gardens","Flushing",
+    "College-Point"]
+neighborhoodsOzone = ["Woodhaven","Ozone-Park","Lindenwood","Glendale"]
+neighborhoodsRich = ["South-Richmond-Hill","Richmond-Hill","South-Ozone-Park"]
+neighborhoodsSut = ["Briarwood","Kew-Gardens-Hills","Pomonok","Utopia","Hillcrest","Jamaica-Hills","Fresh-Meadows",
+   "Jamaica-Estates","Jamaica","South-Jamaica"]
+neighborhoodsJam = ["Hollis","Queens-Village","Saint-Albans","Cambria-Heights","Locust-Manor","Laurelton","Springfield-Gardens",
+   "Rochdale","Rosedale"]
+neighborhoodsFlo = ["Floral-Park","Glen-Oaks","Douglaston-Little-Neck","Oakland-Gardens","Bellaire","Bellerose"]
+neighborhoodsPCCH = ["Parkchester","Castle-Hill","Bronxdale","Morris-Park","Van-Nest","Pelham-Bay","Westchester-Square",
+    "Fairmont-Claremont-Village","Soundview","Unionport"]
+neighborhoodsBrook = ["Borough-Park","Park-Slope","Greenwood","Windsor-Terrace","Sunset-Park","Mapleton","Prospect-Park-South",
+     "Flatbush","Prospect-Lefferts-Gardens"]
+
 def writeTo(fileName,fileContent):
     with open(fileName,"w+") as outfile:
         outfile.write(fileContent)
@@ -42,7 +59,20 @@ def makeFile(nbrhood):
         'b' : newBString,
         'f' : newFString
     }
-    with open("./index.html","r",encoding='ascii',errors='surrogateescape') as reference:
+
+    template = "./index.html"
+    if(nbrhood in neighborhoodsAst): template = "./indexAST.html"
+    if(nbrhood in neighborhoodsFlo): template = "./indexFP.html"
+    if(nbrhood in neighborhoodsSunny): template = "./indexSS.html"
+    if(nbrhood in neighborhoodsJack): template = "./indexJH.html"
+    if(nbrhood in neighborhoodsOzone): template = "./indexOP.html"
+    if(nbrhood in neighborhoodsRich): template = "./indexRH.html"
+    if(nbrhood in neighborhoodsSut): template = "./indexSUT.html"
+    if(nbrhood in neighborhoodsJam): template = "./indexJA.html"
+    if(nbrhood in neighborhoodsPCCH): template = "./indexPCCH.html"
+    if(nbrhood in neighborhoodsBrook): template = "./indexBK.html"
+
+    with open(template,"r",encoding='ascii',errors='surrogateescape') as reference:
         refContent = reference.read()
         tIndices = findAll(titleString,refContent,'t')
         bIndices = findAll(bannerString,refContent,'b')
