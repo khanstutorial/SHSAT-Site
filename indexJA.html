@@ -68,30 +68,13 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 
-					<section id="schedule" class="special">
-						<header class="major">
-							<h2>KT Jamaica</h2>
-							<p></p>
-						</header>
-							<center>
-							<table class="6u 12u$(small)">
-								<tr><th>Sunday</th><td>12pm - 3pm</td></tr>
-								<tr><th>Monday</th><td>Closed</td></tr>
-								<tr><th>Tuesday</th><td>12pm - 2pm</td></tr>
-								<tr><th>Wednesday</th><td>12pm - 2pm</td></tr>
-								<tr><th>Thursday</th><td>Closed</td></tr>
-								<tr><th>Friday</th><td>4pm - 6pm</td></tr>
-								<tr><th>Saturday</th><td>12pm - 3pm</td></tr>
-							</table>
-						</center>
-					</section>
+					<div id="sched"></div>
 
 					<!-- Features -->
 						<section id="three" class="special">
 							<header class="major">
 								<h2 id="Neighborhood 2">Why do families choose Khan's?</h2>
-								<p>We have the highest succeess rate and the #1 SHSAT Program in NYC.<br>
-									 With <strong>class sizes of 12-18 students at KT Jamaica</strong>, our instructors attend to each student to ensure their mastery of the SHSAT.</p>
+								<p>We have the highest succeess rate and the #1 SHSAT Program in NYC.</p>
 							</header>
 							<section class="features">
 								<section>
@@ -191,7 +174,7 @@
 															</tbody>
 													</table>
 						 <!-- <a href="https://khans-tutorial.square.site/product/shsat-52-40-online-purchase/83" target="_blank" class="button primary">Buy Now!</a -->
-						 <a class="button primary"><s>Buy Now!</s></a>
+						 <a href="#" class="button primary"><s>Buy Now!</s></a>
 											</div>
 									</center>
 								</div>
@@ -248,7 +231,7 @@
 								<h2>Buy Now</h2>
 								<p>Have you already decided to make a purchase?<br>View all our SAT package options.<br>When you purchase online you get an additional 20% off!</p>
 								<!-- <a href="index.html#cta2" class="button special">Packages</a> -->
-								<a class="button special">Coming Soon</a>
+								<a href="#" class="button special">Coming Soon</a>
 								<p><font size="1">*Online prices may differ from in-branch pricing</font></p>
 							</header>
 						</div>
@@ -265,29 +248,42 @@
 						<h2>Learn More</h2>
 						<p>Want to learn more about what we have to offer? <br /> Submit the form below and we'll be in touch to discuss your tutoring needs. <br /> Or call us at (718) 938-9451 between 9am and 9pm.</p>
 					</header>
-					<form action="https://formspree.io/xdejreom" method="POST">
+					<form name="contactForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+						<input type=hidden name="oid" value="00D3i000000GRPC">
+						<input type=hidden name="retURL" value="http://www.khanstutorial.com">
 						<center>
 							<div class="6u 12u$(xsmall)">
 								<div class="row uniform">
 									<div class="6u 12u$(xsmall)">
-										<input type="text" name="name" id="name" value="" placeholder="Name" / required="">
+										<input type="text" name="first_name" id="first_name" value="" placeholder="First Name" / required="">
 									</div>
 									<div class="6u 12u$(xsmall)">
-										<input type="email" name="email" id="name" value="" placeholder="Email" / required="">
+										<input type="text" name="last_name" id="last_name" value="" placeholder="Last Name" / required="">
 									</div>
+									<br />
+								</div>
+								<div class="row uniform">
+									<div class="12u 12u$(xsmall)">
+										<input type="tel" pattern="[0-9]{10}" maxlength="10" name="mobile" id="mobile" value="" placeholder="Phone Number" / required="">
+									</div>
+									<br />
 								</div>
 							</div>
 						</center>
 						<br>
 						<div class="row uniform">
 							<div class="12u$">
-								<input type="submit" value="Submit" class="special"  />
+								<input type="submit" value="Submit" class="special" onclick='return OnButton1();' />
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="thankyou.html" />
 					</form>
 				</div>
 			</section>
+
+			<div style="visibility:hidden">
+				<iframe NAME="iframe2" WIDTH="40" HEIGHT="40"></iframe>
+			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -322,6 +318,18 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'e85780de-0b6b-4265-bc3f-6d6a615916d6', f: true }); done = true; } }; })();</script>
+			<script type='text/javascript'>
+				function OnButton1()
+					{
+						document.contactForm.action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"    // First target
+						document.contactForm.target = "window";    // Open in a iframe
+						document.contactForm.submit();        // Submit the page
+						document.contactForm.action = "https://formspree.io/xaekgenx"    // Second target
+						document.contactForm.target = "iframe2";    // Open in a iframe
+						document.contactForm.submit();        // Submit the page
 
+						return true;
+					}
+			</script>
 	</body>
 </html>
