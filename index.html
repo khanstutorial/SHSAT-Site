@@ -246,29 +246,42 @@
 						<h2>Learn More</h2>
 						<p>Want to learn more about what we have to offer? <br /> Submit the form below and we'll be in touch to discuss your tutoring needs. <br /> Or call us at (718) 938-9451 between 9am and 9pm.</p>
 					</header>
-					<form action="https://formspree.io/xdejreom" method="POST">
+					<form name="contactForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+						<input type=hidden name="oid" value="00D3i000000GRPC">
+						<input type=hidden name="retURL" value="http://www.khanstutorial.com">
 						<center>
 							<div class="6u 12u$(xsmall)">
 								<div class="row uniform">
 									<div class="6u 12u$(xsmall)">
-										<input type="text" name="name" id="name" value="" placeholder="Name" / required="">
+										<input type="text" name="first_name" id="first_name" value="" placeholder="First Name" / required="">
 									</div>
 									<div class="6u 12u$(xsmall)">
-										<input type="email" name="email" id="name" value="" placeholder="Email" / required="">
+										<input type="text" name="last_name" id="last_name" value="" placeholder="Last Name" / required="">
 									</div>
+									<br />
+								</div>
+								<div class="row uniform">
+									<div class="12u 12u$(xsmall)">
+										<input type="tel" pattern="[0-9]{10}" maxlength="10" name="mobile" id="mobile" value="" placeholder="Phone Number" / required="">
+									</div>
+									<br />
 								</div>
 							</div>
 						</center>
 						<br>
 						<div class="row uniform">
 							<div class="12u$">
-								<input type="submit" value="Submit" class="special"  />
+								<input type="submit" value="Submit" class="special" onclick='return OnButton1();' />
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="thankyou.html" />
 					</form>
 				</div>
 			</section>
+
+			<div style="visibility:hidden">
+				<iframe NAME="iframe2" WIDTH="40" HEIGHT="40"></iframe>
+			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -303,6 +316,18 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'e85780de-0b6b-4265-bc3f-6d6a615916d6', f: true }); done = true; } }; })();</script>
+			<script type='text/javascript'>
+				function OnButton1()
+					{
+						document.contactForm.action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"    // First target
+						document.contactForm.target = "window";    // Open in a iframe
+						document.contactForm.submit();        // Submit the page
+						document.contactForm.action = "https://formspree.io/xaekgenx"    // Second target
+						document.contactForm.target = "iframe2";    // Open in a iframe
+						document.contactForm.submit();        // Submit the page
 
+						return true;
+					}
+			</script>
 	</body>
 </html>
