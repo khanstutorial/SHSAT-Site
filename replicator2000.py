@@ -9,14 +9,14 @@ neighborhoodsJack = ["Woodside","Jackson-Heights","East-Elmhurst","Corona","Elmh
 neighborhoodsOzone = ["Woodhaven","Ozone-Park","Lindenwood","Glendale"]
 neighborhoodsRich = ["South-Richmond-Hill","Richmond-Hill","South-Ozone-Park"]
 neighborhoodsSut = ["Briarwood","Kew-Gardens-Hills","Pomonok","Utopia","Hillcrest","Jamaica-Hills","Fresh-Meadows",
-   "Jamaica-Estates","Jamaica","South-Jamaica"]
+   "Jamaica-Estates","Jamaica","South-Jamaica","Sutphin"]
 neighborhoodsJam = ["Hollis","Queens-Village","Saint-Albans","Cambria-Heights","Locust-Manor","Laurelton","Springfield-Gardens",
-   "Rochdale","Rosedale"]
+   "Rochdale","Rosedale","Jamaica"]
 neighborhoodsFlo = ["Floral-Park","Glen-Oaks","Douglaston-Little-Neck","Oakland-Gardens","Bellaire","Bellerose"]
 neighborhoodsPCCH = ["Parkchester","Castle-Hill","Bronxdale","Morris-Park","Van-Nest","Pelham-Bay","Westchester-Square",
-    "Fairmont-Claremont-Village","Soundview","Unionport"]
+    "Fairmont-Claremont-Village","Soundview","Unionport","Bronx"]
 neighborhoodsBrook = ["Borough-Park","Park-Slope","Greenwood","Windsor-Terrace","Sunset-Park","Mapleton","Prospect-Park-South",
-     "Flatbush","Prospect-Lefferts-Gardens"]
+     "Flatbush","Prospect-Lefferts-Gardens","Brooklyn"]
 
 def writeTo(fileName,fileContent):
     with open(fileName,"w+") as outfile:
@@ -116,7 +116,7 @@ def cityGeneration():
                      "Rego-Park","Richmond-Hill","Rochdale","Rosedale","Saint-Albans","Soundview","South-Jamaica",
                      "South-Ozone-Park","South-Richmond-Hill","Springfield-Gardens","Sunnyside-Gardens","Sunnyside",
                      "Sunset-Park","Unionport","Upper-East-Side","Utopia","Van-Nest","West-Farms","Westchester-Square",
-                     "Whitestone","Windsor-Terrace","Woodhaven","Woodside"]
+                     "Whitestone","Windsor-Terrace","Woodhaven","Woodside","Sutphin","Jamaica","Bronx","Brooklyn"]
     for x in neighborhoods:
         generateIndex(x)
     return
