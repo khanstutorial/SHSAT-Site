@@ -1425,7 +1425,7 @@
 
 	body {
 		background-color: #f5f5f5;
-		color: #b8b8b8;
+		color: #454545;
 	}
 
 	body, input, select, textarea {
@@ -1596,7 +1596,7 @@
 	}
 
 	input, select, textarea {
-		color: #8f8f8f;
+		color: #4a4a4a;
 	}
 
 	a {
@@ -1604,11 +1604,11 @@
 	}
 
 	strong, b {
-		color: #8f8f8f;
+		color: #4a4a4a;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #8f8f8f;
+		color: #4a4a4a;
 	}
 
 	blockquote {
@@ -1819,7 +1819,7 @@
 	.button {
 		background-color: transparent;
 		border-color: rgba(144, 144, 144, 0.25);
-		color: #8f8f8f !important;
+		color: #4a4a4a !important;
 	}
 
 		input[type="submit"]:hover,
@@ -1846,7 +1846,7 @@
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
-			color: #b8b8b8;
+			color: #454545;
 		}
 
 		input[type="submit"].special,
@@ -1864,7 +1864,7 @@
 			input[type="button"].special.icon:before,
 			button.special.icon:before,
 			.button.special.icon:before {
-				color: #b6c7e9;
+				color: #ffffff;
 			}
 
 			input[type="submit"].special:hover,
@@ -2055,7 +2055,7 @@
 	}
 
 	label {
-		color: #8f8f8f;
+		color: #4a4a4a;
 	}
 
 	input[type="text"],
@@ -2084,7 +2084,7 @@
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #b8b8b8;
+		color: #454545;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2107,23 +2107,23 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: #b8b8b8 !important;
+		color: #454545 !important;
 	}
 
 	:-moz-placeholder {
-		color: #b8b8b8 !important;
+		color: #454545 !important;
 	}
 
 	::-moz-placeholder {
-		color: #b8b8b8 !important;
+		color: #454545 !important;
 	}
 
 	:-ms-input-placeholder {
-		color: #b8b8b8 !important;
+		color: #454545 !important;
 	}
 
 	.formerize-placeholder {
-		color: #b8b8b8 !important;
+		color: #454545 !important;
 	}
 
 /* Icon */
@@ -2505,7 +2505,7 @@
 	}
 
 	dl dt {
-		color: #8f8f8f;
+		color: #4a4a4a;
 	}
 
 /* Section/Article */
@@ -2587,7 +2587,7 @@
 	}
 
 	header p {
-		color: #b8b8b8;
+		color: #454545;
 	}
 
 	header.major h1:after, header.major h2:after, header.major h3:after {
@@ -2666,7 +2666,7 @@
 		}
 
 	table th {
-		color: #8f8f8f;
+		color: #4a4a4a;
 	}
 
 	table thead {
@@ -2964,7 +2964,7 @@
 				.wrapper.style1 input[type="button"].icon:before,
 				.wrapper.style1 button.icon:before,
 				.wrapper.style1 .button.icon:before {
-					color: #b6c7e9;
+					color: #ffffff;
 				}
 
 				.wrapper.style1 input[type="submit"].special,
@@ -2974,7 +2974,7 @@
 				.wrapper.style1 .button.special {
 					background-color: #ffffff;
 					border-color: transparent;
-					color: #8f8f8f !important;
+					color: #4a4a4a !important;
 				}
 
 					.wrapper.style1 input[type="submit"].special.icon:before,
@@ -2982,7 +2982,7 @@
 					.wrapper.style1 input[type="button"].special.icon:before,
 					.wrapper.style1 button.special.icon:before,
 					.wrapper.style1 .button.special.icon:before {
-						color: #b8b8b8;
+						color: #454545;
 					}
 
 					.wrapper.style1 input[type="submit"].special:hover,
@@ -3054,23 +3054,23 @@
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #b6c7e9 !important;
+				color: #ffffff !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #b6c7e9 !important;
+				color: #ffffff !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #b6c7e9 !important;
+				color: #ffffff !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #b6c7e9 !important;
+				color: #ffffff !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #b6c7e9 !important;
+				color: #ffffff !important;
 			}
 
 			.wrapper.style1 ul.alt li {
@@ -3078,12 +3078,12 @@
 			}
 
 			.wrapper.style1 ul.icons .icon {
-				color: #8f8f8f !important;
+				color: #4a4a4a !important;
 			}
 
 			.wrapper.style1 ul.icons.special .icon:before {
 				background-color: #ffffff;
-				color: #8f8f8f !important;
+				color: #4a4a4a !important;
 			}
 
 			.wrapper.style1 dl dt {
@@ -3091,7 +3091,7 @@
 			}
 
 			.wrapper.style1 header p {
-				color: #b6c7e9;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 header.major h1:after, .wrapper.style1 header.major h2:after, .wrapper.style1 header.major h3:after {
@@ -3141,11 +3141,11 @@
 
 		.wrapper.style2 {
 			background-color: #fff;
-			color: #b8b8b8;
+			color: #454545;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
-				color: #8f8f8f;
+				color: #4a4a4a;
 			}
 
 			.wrapper.style2 a {
@@ -3153,11 +3153,11 @@
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
-				color: #8f8f8f;
+				color: #4a4a4a;
 			}
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-				color: #8f8f8f;
+				color: #4a4a4a;
 			}
 
 			.wrapper.style2 blockquote {
@@ -3184,7 +3184,7 @@
 			.wrapper.style2 .button {
 				background-color: transparent;
 				border-color: rgba(144, 144, 144, 0.25);
-				color: #8f8f8f !important;
+				color: #4a4a4a !important;
 			}
 
 				.wrapper.style2 input[type="submit"]:hover,
@@ -3211,7 +3211,7 @@
 				.wrapper.style2 input[type="button"].icon:before,
 				.wrapper.style2 button.icon:before,
 				.wrapper.style2 .button.icon:before {
-					color: #b8b8b8;
+					color: #454545;
 				}
 
 				.wrapper.style2 input[type="submit"].special,
@@ -3229,7 +3229,7 @@
 					.wrapper.style2 input[type="button"].special.icon:before,
 					.wrapper.style2 button.special.icon:before,
 					.wrapper.style2 .button.special.icon:before {
-						color: #b6c7e9;
+						color: #ffffff;
 					}
 
 					.wrapper.style2 input[type="submit"].special:hover,
@@ -3249,7 +3249,7 @@
 					}
 
 			.wrapper.style2 label {
-				color: #8f8f8f;
+				color: #4a4a4a;
 			}
 
 			.wrapper.style2 input[type="text"],
@@ -3278,7 +3278,7 @@
 
 			.wrapper.style2 input[type="checkbox"] + label,
 			.wrapper.style2 input[type="radio"] + label {
-				color: #b8b8b8;
+				color: #454545;
 			}
 
 				.wrapper.style2 input[type="checkbox"] + label:before,
@@ -3301,23 +3301,23 @@
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
-				color: #b8b8b8 !important;
+				color: #454545 !important;
 			}
 
 			.wrapper.style2 :-moz-placeholder {
-				color: #b8b8b8 !important;
+				color: #454545 !important;
 			}
 
 			.wrapper.style2 ::-moz-placeholder {
-				color: #b8b8b8 !important;
+				color: #454545 !important;
 			}
 
 			.wrapper.style2 :-ms-input-placeholder {
-				color: #b8b8b8 !important;
+				color: #454545 !important;
 			}
 
 			.wrapper.style2 .formerize-placeholder {
-				color: #b8b8b8 !important;
+				color: #454545 !important;
 			}
 
 			.wrapper.style2 ul.alt li {
@@ -3338,11 +3338,11 @@
 			}
 
 			.wrapper.style2 dl dt {
-				color: #8f8f8f;
+				color: #4a4a4a;
 			}
 
 			.wrapper.style2 header p {
-				color: #b8b8b8;
+				color: #454545;
 			}
 
 			.wrapper.style2 header.major h1:after, .wrapper.style2 header.major h2:after, .wrapper.style2 header.major h3:after {
@@ -3358,7 +3358,7 @@
 				}
 
 			.wrapper.style2 table th {
-				color: #8f8f8f;
+				color: #4a4a4a;
 			}
 
 			.wrapper.style2 table thead {
@@ -3491,7 +3491,7 @@
 			#banner input[type="button"].icon:before,
 			#banner button.icon:before,
 			#banner .button.icon:before {
-				color: #b6c7e9;
+				color: #ffffff;
 			}
 
 			#banner input[type="submit"].special,
@@ -3501,7 +3501,7 @@
 			#banner .button.special {
 				background-color: #ffffff;
 				border-color: transparent;
-				color: #8f8f8f !important;
+				color: #4a4a4a !important;
 			}
 
 				#banner input[type="submit"].special.icon:before,
@@ -3509,7 +3509,7 @@
 				#banner input[type="button"].special.icon:before,
 				#banner button.special.icon:before,
 				#banner .button.special.icon:before {
-					color: #b8b8b8;
+					color: #454545;
 				}
 
 				#banner input[type="submit"].special:hover,
@@ -3529,7 +3529,7 @@
 					}
 
 		#banner header p {
-			color: #b6c7e9;
+			color: #ffffff;
 		}
 
 		#banner header.major h1:after, #banner header.major h2:after, #banner header.major h3:after {
@@ -3715,7 +3715,7 @@
 	}
 
 		#footer .copyright {
-			color: #b8b8b8;
+			color: #454545;
 			font-size: 0.9em;
 			margin: 0 0 3em 0;
 			padding: 0;
